@@ -1,4 +1,4 @@
-package texteditor;
+package editor;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
     // control d = duplicate
     // copy, cut, paste
 
-public class TextEditor extends Application {
+public class Editor extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -22,7 +22,7 @@ public class TextEditor extends Application {
 		
 		Scene scene = new Scene(vBox, 200, 100);
 		
-		primaryStage.setTitle("My TextEditor");
+		primaryStage.setTitle("Editor");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

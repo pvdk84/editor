@@ -1,0 +1,27 @@
+=== GENERAL INFO ===
+
+Texteditor. Should look like Mac's TextEdit, but with a Darcula option. Normal look is black text against white background. Darcula look is green text against black background.
+
+=== FEATURES ===
+
+menu: file -> open, save, new
+
+menu: edit -> cut, copy, paste
+
+tab: parallel files
+
+line numbering
+
+key-bindings: (see notepad++)
+- cut, copy, paste
+- duplicate line
+- delete line
+- move line up
+- move line down
+- find
+
+=== ARCHITECTURE ===
+
+http://www.ntu.edu.sg/home/ehchua/programming/java/Javafx1_intro.html
+
+https://github.com/abrandell/JavaFX-TextEditor/tree/master/src/abrand
