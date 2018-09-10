@@ -3,13 +3,8 @@ package editor;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
-import javafx.scene.layout.VBox; 
+import javafx.scene.control.MenuBar;
 import javafx.stage.Stage;
-
-// nice to have's
-    // tab = python/java compatible
-    // control d = duplicate
-    // copy, cut, paste
 
 public class Editor extends Application {
 	
@@ -18,9 +13,9 @@ public class Editor extends Application {
 		
 		TextArea textArea = new TextArea();
 		
-		VBox vBox = new VBox(textArea);
+		MenuBar menuBar = new MenuBar();
 		
-		Scene scene = new Scene(vBox, 200, 100);
+		Scene scene = new Scene(textArea, 800, 600);
 		
 		primaryStage.setTitle("Editor");
 		primaryStage.setScene(scene);
@@ -31,4 +26,3 @@ public class Editor extends Application {
 		Application.launch(args);
 	}
 }
-
