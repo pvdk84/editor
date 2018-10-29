@@ -12,7 +12,7 @@ Maybe turn it into my own customized coding editor sometime, with:
 - move line up, down
 - comment out
 
-Sources:
+With a little help from:
 - http://www.ntu.edu.sg/home/ehchua/programming/java/Javafx1_intro.html
 - https://github.com/abrandell/JavaFX-TextEditor/tree/master/src/abrand
 - https://github.com/jguitana/simple-file-editor
