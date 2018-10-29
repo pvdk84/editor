@@ -20,8 +20,5 @@ Sources:
 - http://tutorials.jenkov.com/javafx/index.html
 - https://o7planning.org/en/11009/javafx
 
-TODO:
-- maven, packages, git ignorejava
-
 
 
