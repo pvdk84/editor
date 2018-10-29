@@ -1,11 +1,11 @@
 Just a simple editor to get acquainted with javaFX.
 
 Features:
-- file menu: open, save, new
-- edit menu: cut, copy, paste
+- file menu with options "open", "save", and "new"
 
-Maybe turn it into my own customized coding editor sometime: 
-- tabs for different open files
+Maybe turn it into my own customized coding editor sometime, with: 
+- tabs for different open files on the top
+- overview directory on the left
 - line numbering
 - find function
 - duplicate, delete line
@@ -19,6 +19,9 @@ Sources:
 - http://www.drdobbs.com/jvm/a-javafx-text-editor-part-1/240142297
 - http://tutorials.jenkov.com/javafx/index.html
 - https://o7planning.org/en/11009/javafx
+
+TODO:
+- maven, packages, git ignorejava
 
 
 

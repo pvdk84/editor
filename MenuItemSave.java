@@ -4,12 +4,11 @@ import java.io.*;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
-import javafx.stage.FileChooser.*;
 import javafx.stage.Stage;
 
 /*
  * Constructor like function for menu item "save".
- * On click, the item "save" opens filechooser save file.
+ * On click, the item "save" opens filechooser for saving files.
  */
  
 public class MenuItemSave {
@@ -37,7 +36,6 @@ public class MenuItemSave {
 		String textToSave = textArea.getText(); 
 
         	try {
-
 			File file = fileChooser.showSaveDialog(stage);
 
      			if (file != null) {
