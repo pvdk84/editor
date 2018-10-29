@@ -6,7 +6,6 @@ import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.*;
 import javafx.stage.Stage;
-import pvdk84.editor.Editor;
 
 /*
  * Constructor like function for menu item "open".
@@ -17,8 +16,10 @@ import pvdk84.editor.Editor;
  
 public class MenuItemOpen {
 
+	// init menu item "open"
 	private static MenuItem menuItemOpen = new MenuItem("Open");
 
+	// add functionality to open filechooser upon click
 	public static MenuItem createMenuItemOpen() {
 		
 		menuItemOpen.setOnAction(action -> {
@@ -28,6 +29,7 @@ public class MenuItemOpen {
 		return menuItemOpen;
 	}
 
+	// functionality to open filechooser for text and java files
 	private static void openFile(Stage stage) {
 
 		FileChooser fileChooser = new FileChooser();
@@ -41,14 +43,16 @@ public class MenuItemOpen {
 		MenuItemOpen.addFileToTextArea(file);
 	}
 
+	// functionality to read file and add to textarea
 	private static void addFileToTextArea(File file) {
 
 		String text;
 
 		TextArea textArea = EditorTextArea.getTextArea();
+		textArea.clear();
 
-         	try (BufferedReader buffReader = new BufferedReader(new FileReader(file))) {
-            		while ((text = buffReader.readLine()) != null) {
+        	try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+            		while ((text = bufferedReader.readLine()) != null) {
                 	textArea.appendText(text + "\n");
             		}
         	} catch (IOException e) {

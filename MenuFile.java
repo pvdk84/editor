@@ -13,8 +13,10 @@ import pvdk84.editor.MenuItemSave;
  
 public class MenuFile {
 
+	// init menu "file"
 	private static Menu menuFile = new Menu("File");
 
+	// add items "new", "open", and "save"
 	public static Menu createMenuFile() {
 		
 		MenuItem menuItemNew = MenuItemNew.createMenuItemNew(); 

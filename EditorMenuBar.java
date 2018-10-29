@@ -11,8 +11,10 @@ import pvdk84.editor.MenuFile;
 
 public class EditorMenuBar {
 
+	// init menubar
 	private static MenuBar menuBar = new MenuBar();
 
+	// add menu file
 	public static MenuBar createMenuBar() {
 				
 		Menu menuFile = MenuFile.createMenuFile();
